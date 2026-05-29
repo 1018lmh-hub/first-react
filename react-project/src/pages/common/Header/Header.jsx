@@ -32,6 +32,18 @@ const Header = () => {
                 Home
               </a>
               <a
+                onClick={() => navi("/busans")}
+                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                부산의 맛집
+              </a>
+              <a
+                onClick={() => navi("/landscapes")}
+                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                전국 풍경 사진
+              </a>
+              <a
                 onClick={() => navi("/notices")}
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -48,36 +60,6 @@ const Header = () => {
                 className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
                 유저
-              </a>
-              <a
-                onClick={() => navi("/chap01")}
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Chap01
-              </a>
-              <a
-                onClick={() => navi("/chap02")}
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Chap02
-              </a>
-              <a
-                onClick={() => navi("/chap03")}
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Chap03
-              </a>
-              <a
-                onClick={() => navi("/chap04")}
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Chap04
-              </a>
-              <a
-                onClick={() => navi("/chap05")}
-                className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Chap05
               </a>
             </div>
           </div>

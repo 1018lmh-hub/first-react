@@ -19,6 +19,10 @@ import ReplyList from "./pages/Notice/NoticeList/ReplyList";
 import MemberList from "./pages/Notice/NoticeList/MemberList";
 import MemberDetail from "./pages/Notice/NoticeDetail/MemberDetail";
 import NoticeDetail from "./pages/Notice/NoticeDetail/NoticeDetail";
+import Foods from "./pages/Busan/List/Foods";
+import Food from "./pages/Busan/Detail/Food";
+import Photos from "./pages/Landscape/List/Photos";
+import Photo from "./pages/Landscape/Detail/Photo";
 
 function App() {
   return (
@@ -26,16 +30,15 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<h1>요기는 메인이에용</h1>} />
+        <Route path="/busans" element={<Foods />} />
+        <Route path="/busans/:id" element={<Food />} />
+        <Route path="/landscapes" element={<Photos />} />
+        <Route path="/landscapes/:id" element={<Photo />} />
         <Route path="/notices" element={<NoticeList />} />
         <Route path="/notices/:id" element={<NoticeDetail />} />
         <Route path="/replies" element={<ReplyList />} />
         <Route path="/members" element={<MemberList />} />
         <Route path="/members/:id" element={<MemberDetail />} />
-        <Route path="/chap01" element={<Chap01 />} />
-        <Route path="/chap02" element={<Chap02 />} />
-        <Route path="/chap03" element={<Chap03 />} />
-        <Route path="/chap04" element={<Chap04 />} />
-        <Route path="/chap05" element={<Chap05 />} />
         <Route path="*" element={<h1>존재하지 않는 페이지입니다.</h1>} />
       </Routes>
       <Footer />
